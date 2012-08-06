@@ -1,0 +1,9 @@
+<p><%= image_tag (FileTest.exists?("#{Rails.root}/public/plugin_assets/user_avatar/images/users/#{@user.id}.png") ? "users/#{@user.id}.png" : 'static/photo_na.gif'), :plugin => 'user_avatar', :size => '80x107' %>
+    <label>
+        User Image
+        <span class="form">
+            form
+            <input type="file" name="user_image" value="" />
+        </span>
+    </label>
+</p>
